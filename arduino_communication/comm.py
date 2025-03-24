@@ -1,6 +1,8 @@
 # INSTALL PYSERIAL FIRST!
 # python3 -m pip install pyserial
 
+# NOTE: Close Arduino IDE when running this code, since serial channel can only be accessed by one program at a time.
+
 import serial
 import time
 

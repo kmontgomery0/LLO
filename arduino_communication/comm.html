@@ -71,7 +71,9 @@
     <div class="container">
         <h1>Pro Micro Serial Communication</h1>
 
-        <p>Note: Web Serial API will prompt user to select the port from a pop-up menu, which requires a user gesture (meaning you cannot add connectToDevice() to window.onload), thus a button below.</p>
+        <p>Note 1: Web Serial API will prompt user to select the port from a pop-up menu, which requires a user gesture (meaning you cannot add connectToDevice() to window.onload), thus a button below.</p>
+
+        <p>NOTE 2: Close Arduino IDE when running this code, since serial channel can only be accessed by one program at a time.</p>
         
         <div class="controls">
             <button id="connectButton">Connect to Pro Micro</button>
