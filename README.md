@@ -34,4 +34,10 @@ For example if your API key is `sk-proj-xxxxxxxxxxxxxxxxxx...`, then you should 
 OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxx...
 ```
 
+![.env file](./env.jpg)
+
 3. You should now be able to run the code
+
+## Instructions for running JavaScript code
+
+For chat and image api, I included an html page in each folder that performs same functions as python samples, linking corresponding javascript code for your reference.

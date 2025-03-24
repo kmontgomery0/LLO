@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI API Request Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            width: 80vw;
+        }
+        button {
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .result {
+            margin-top: 10px;
+            width: 80vw;
+            padding: 10px;
+            border: 1px solid #ddd;
+            min-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat Completion Samples (check chat_completion.js)</h1>
+    <div>
+        <p><b>Input your API key here</b></p>
+        <input type="text" id="apiKeyInput" placeholder="sk-...">
+    </div>
+    
+    <div>
+        <p><b>Single User Prompt</b></p>
+        <input type="text" id="promptInput" placeholder="Enter your prompt here">
+        <button onclick="sendRequest()">Send Request</button>
+    </div>
+    <div class="result" id="result1">Result will appear here...</div>
+
+    <br>
+    <br>
+
+    <div>
+        <p><b>User Prompt With Developer Prompt</b></p>
+        <input type="text" id="promptInputDeveloper" placeholder="Enter your developer prompt here, e.g. 'Talk like characters from Shakespeare's writing'">
+        <input type="text" id="promptInputUser" placeholder="Enter your user prompt here">
+        <button onclick="sendRequestDeveloper()">Send Request</button>
+    </div>
+    <div class="result" id="result2">Result will appear here...</div>
+
+    <br>
+    <br>
+
+    <div>
+        <p><b>User Prompt With Message History (edit message history in js)</b></p>
+        <p>Developer: Talk like characters from Shakespeare's writing</p>
+        <p>User: Do you know who is Marcelo Coelho?</p>
+        <p>Assistant: Good sir or fair lady, prithee, I am but a humble wraith of knowledge, and the name Marcelo Coelho doth not ring a bell in the grand annals of my understanding.</p>
+        <input type="text" id="promptInputHistory" placeholder="Enter your next prompt here">
+        <button onclick="sendRequestHistory()">Send Request</button>
+    </div>
+    <div class="result" id="result3">Result will appear here...</div>
+
+    <script src="./chat_completion.js"></script>
+</body>
+</html>
