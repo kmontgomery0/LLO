@@ -1,4 +1,4 @@
-# PLEASE CAREFULLY READ THE INSTRUCTIONS BELOW !!!
+# Set up Instructions
 
 This repository is for 4.043/4.044 Design Studio: Interaction Intelligence by Marcelo Coelho, it contains sample codes we think may be useful your project. All samples run on OpenAI's api.
 
