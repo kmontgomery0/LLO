@@ -14,7 +14,7 @@ if (not os.path.isfile(".env")):
 	quit()
 
 load_dotenv()
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def chat_completion(prompt, model = "gpt-4o-mini"):
 
@@ -59,11 +59,11 @@ def chat_completion_with_history(message_history, model = "gpt-4o-mini"):
 
 user_prompt = "Do you know who is Marcelo Coelho?"
 
-# print(chat_completion(user_prompt))
+print(chat_completion(user_prompt))
 
 developer_prompt = "Talk like characters from Shakespeare's writing"
 
-# print(chat_completion_with_developer(developer_prompt, user_prompt))
+print(chat_completion_with_developer(developer_prompt, user_prompt))
 
 message_history = [
 	{
