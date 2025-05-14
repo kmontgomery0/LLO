@@ -72,7 +72,7 @@ def create_full_mask(image_path, output_path="full_mask.png"):
 	return output_path
 
 # Set your image name here
-IMAGE_NAME = "IMG_0969.png"
+IMAGE_NAME = "sample_image.jpg"
 
 # List of example prompts
 PROMPTS = [

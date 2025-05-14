@@ -29,7 +29,9 @@ python3 -m pip install openai dotenv
 ```
 OPENAI_API_KEY=$REPLACE WITH YOUR API KEY$
 ```
+
 For example if your API key is `sk-proj-xxxxxxxxxxxxxxxxxx...`, then you should put:
+
 ```
 OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxx...
 ```
@@ -41,3 +43,30 @@ OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxx...
 ## Instructions for running JavaScript code
 
 For chat and image api, I included an html page in each folder that performs same functions as python samples, linking corresponding javascript code for your reference.
+
+## Personal Notes
+
+In parent directory (llo-sample-code), activate virtual environment
+
+```
+.\venv\Scripts\activate
+```
+
+Install the required packages
+
+```
+pip install openai python-dotenv
+```
+
+OR
+
+```
+pip install openai
+pip install dotenv
+```
+
+Go to specific directory and run the script
+
+```
+python chat_completion.pu
+```
