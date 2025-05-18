@@ -44,7 +44,7 @@ OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxx...
 
 For chat and image api, I included an html page in each folder that performs same functions as python samples, linking corresponding javascript code for your reference.
 
-## Personal Notes
+## Notes on setting up dev environment
 
 In parent directory (llo-sample-code), activate virtual environment
 
