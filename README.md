@@ -49,6 +49,7 @@ For chat and image api, I included an html page in each folder that performs sam
 In parent directory (llo-sample-code), activate virtual environment
 
 ```
+python -m venv venv
 .\venv\Scripts\activate
 ```
 
@@ -63,10 +64,18 @@ OR
 ```
 pip install openai
 pip install dotenv
+pip install pyserial
+pip install websockets
 ```
 
 Go to specific directory and run the script
 
 ```
-python chat_completion.pu
+python chat_completion.py
+```
+
+To exit the virtual environment:
+
+```
+deactivate
 ```
